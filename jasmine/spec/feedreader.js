@@ -106,4 +106,13 @@ describe('Initial Entries', function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+         describe('New Feed Selection', function() {
+           var oldFeed;
+           beforeAll(function() {
+             loadFeed(1, function() {
+             oldFeed = $('.feed').html();
+           done();
+         };)
+       });
+     });
 }());
