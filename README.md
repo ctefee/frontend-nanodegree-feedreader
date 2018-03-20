@@ -1,5 +1,5 @@
 # About this project:
-*Frontend-nanodegree-feedreader* project provides a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included Jasmine and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
+*Frontend-nanodegree-feedreader* project is where you will be learning about testing with Javascript. Testing is an important part of the development process and many organizations practice a standard known as "test-driven development" or TDD. This is when developers write tests first, before they ever start developing their application.
 
 ## Important:
 Download the [required project assets](http://github.com/udacity/frontend-nanodegree-feedreader).
