@@ -7,6 +7,6 @@ Download the [required project assets](http://github.com/udacity/frontend-nanode
 Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric).
 
 ## Installation:
-**How to run the application**
+**How to run this application:**
 * Clone the repository and open 'index.html' through an http server.
 * The Jasmine tests will show on the bottom of the page once index.html has been uploaded.
