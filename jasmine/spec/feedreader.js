@@ -99,20 +99,24 @@ $(function() {
 
   /* Write a new test suite named 'New Feed Selection' */
   describe('New Feed Selection', function() {
+    /* Write a test that ensures a new feed is loaded by loadFeed function() */
     var oldFeed, newFeed;
-        /*
-        16. Write a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
-        17. No test should be dependent on the results of another.
-        18. Callbacks should be used to ensure that feeds are loaded before they are tested.
-        19. Implement error handling for undefined variables and out-of-bound array access.
-        20. When complete - all of your tests should pass.
-        */
-    beforeAll(function() {
-      loadFeed(1, function() {
+    beforeEach(function(done) {
+      loadFeed(0, function() {
         oldFeed = $('.feed').html();
-        done();
+        loadFeed(1, function() {
+          newFeed = $('.feed').html();
+          done();
+        });
       });
     });
+
+/* Write a spec that ensures oldFeed and newFeed are not dependent on each other */
+    it('Changes content when a new feed is loaded', function() {
+      expect(oldFeed).not.toEqual(newFeed);
+
+    });
+
   });
 
 }());
